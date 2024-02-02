@@ -1,5 +1,9 @@
 package com.taskmanager.domain;
 
-public interface TaskService {
+import java.util.List;
 
+public interface TaskService {
+    Task getTaskById(long id);
+    List<Task> getAllTasks();
+    void addTask(Task task);
 }
